@@ -1,10 +1,843 @@
 [
     {
         "question": "What is a class?",
-        "answer": ""
+        "answers": [
+            {
+                "answer": "A class is a template that is used to create an object.",
+                "answers": []
+            },
+            {
+                "answer": "A class contains properties as well as methods.",
+                "answers": []
+            }
+        ]
     },
     {
         "question": "What are the main object-oriented principles?",
-        "answer": ""
+        "answers": [
+            {
+                "answer": "Encapsulation - Encapsulates data members and ensures that the members cannot be modified directly outside the class. The members should be modified via a method or a property.",
+                "answers": []
+            },
+            {
+                "answer": "Polymorphism - Polymorphism is an object that can have many forms and there are two types of polymorphism.",
+                "answers": [
+                    {
+                        "answer": "Compile-time polymorphism - can be achieved by method overloading",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Run time polymorphism - can be achieved by method overriding.",
+                        "answers": []
+                    }
+                ]
+            },
+            {
+                "answer": "Inheritance - Derived class inherits from the base class and helps write reusable code.",
+                "answers": []
+            },
+            {
+                "answer": "Abstraction - Abstraction is a way of exposing the required features of a class.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is an object?",
+        "answers": [
+            {
+                "answer": "An object is an instance of a class.",
+                "answers": []
+            },
+            {
+                "answer": "A new keyword can be used to instantiate an object.",
+                "answers": []
+            },
+            {
+                "answer": "An object is a reference type.",
+                "answers": []
+            },
+            {
+                "answer": "Objects and their members are created in memory.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is a constructor?",
+        "answers": [
+            {
+                "answer": "A constructor is a method with the same as the class name.",
+                "answers": []
+            },
+            {
+                "answer": "The compiler creates a constructor in memory if one is not specified.",
+                "answers": [
+                    {
+                        "answer": "Types of constructors",
+                        "answers": [
+                            {
+                                "answer": "Static constructor - can only access static members of the class and has no parameters.",
+                                "answers": []
+                            },
+                            {
+                                "answer": "Copy constructor - can be used to copy an object into a new object.",
+                                "answers": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What is a destructor/finalizer?",
+        "answers": [
+            {
+                "answer": "A destructor can be used as a final clean-up when a class instance is being collect",
+                "answers": []
+            },
+            {
+                "answer": "Can call “System.GC.Collect()” to clean up any unmanaged resources.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "Is C# managed or unmanaged code?",
+        "answers": [
+            {
+                "answer": "C# is managed code because it uses CLR common language runtime to compile the code into machine code that is then executed.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is a value type and what is a reference type?",
+        "answers": [
+            {
+                "answer": "A value type is one of the following:",
+                "answers": [
+                    {
+                        "answer": "Boolean.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Integer.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Bytes.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Struct (Crazy but it’s true).",
+                        "answers": []
+                    }
+                ]
+            },
+            {
+                "answer": "A reference type is a more complicated object such as:",
+                "answers": [
+                    {
+                        "answer": "Object.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Delegate.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "String.",
+                        "answers": []
+                    }
+                ]
+            },
+            {
+                "answer": "A value type is directly stored in RAM.",
+                "answers": []
+            },
+            {
+                "answer": "A reference type is stored as a reference in memory.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is a namespace?",
+        "answers": [
+            {
+                "answer": "A namespace is a way of organising classes.",
+                "answers": []
+            },
+            {
+                "answer": "It is not compulsory to put a class in a namespace.",
+                "answers": []
+            },
+            {
+                "answer": "However, it is preferred that your class is located within a namespace to prevent clashes with other namespaces that might have the same name.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is a virtual method and how is it different from an abstract method?",
+        "answers": [
+            {
+                "answer": "A virtual method has a default implementation that can be overridden in the derived class.",
+                "answers": []
+            },
+            {
+                "answer": "An abstract method has no implementation and the derived class must implement it.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is method overriding?",
+        "answers": [
+            {
+                "answer": "Method overriding is when we override a default implementation of a method within the derived class. This can be done for base methods that have a virtual keyword.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is method overloading?",
+        "answers": [
+            {
+                "answer": "Method overloading is a way of having multiple methods with the same name but different parameters, or a different order of parameters.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is a static keyword?",
+        "answers": [
+            {
+                "answer": "The static keyword is used to create a static class and static methods.",
+                "answers": []
+            },
+            {
+                "answer": "We cannot create an instance of a class if the class is static.",
+                "answers": []
+            },
+            {
+                "answer": "We can use the static class to call functions or properties without instantiating the class object.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "Can the “this” keyword be used within a static class?",
+        "answers": [
+            {
+                "answer": "No, we cannot use the “this” keyword within a static class.",
+                "answers": []
+            },
+            {
+                "answer": "We can only use static methods and static members within a static class.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is the difference between constant and readonly?",
+        "answers": [
+            {
+                "answer": "A constant has to be declared and initialised at compile time.",
+                "answers": []
+            },
+            {
+                "answer": "A constant cannot be initialised within a constructor.",
+                "answers": []
+            },
+            {
+                "answer": "A read-only member can be initialised within the class constructor but it cannot be changed anywhere else.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is the difference between a string and a string builder in C#?",
+        "answers": [
+            {
+                "answer": "A string is an immutable object and each time a string is changed, a new object is created in memory, which is not efficient.",
+                "answers": []
+            },
+            {
+                "answer": "A string builder is more optimal as it can be used to build a string without creating new objects within memory.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is a break and continue statement?",
+        "answers": [
+            {
+                "answer": "A break statement can be used to break out of the loop so that no more code is executed within that loop.",
+                "answers": []
+            },
+            {
+                "answer": "A continue statement will skip the current iteration and will continue running the code within the loop.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is boxing and unboxing?",
+        "answers": [
+            {
+                "answer": "Boxing is a process of converting a value type to a reference type.",
+                "answers": []
+            },
+            {
+                "answer": "Unboxing is the process of converting a reference type to a value type.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is a sealed class?",
+        "answers": [
+            {
+                "answer": "We create a class with an access modifier of sealed if there is no need for us to inherit from that class.",
+                "answers": []
+            },
+            {
+                "answer": "We also use the sealed keyword if we want to restrict the class from being inherited.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is a partial class?",
+        "answers": [
+            {
+                "answer": "A partial class allows us to divide a single class into multiple files.",
+                "answers": []
+            },
+            {
+                "answer": "The compiler will combine the partial classes into a complete class.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is an enum?",
+        "answers": [
+            {
+                "answer": "An enum is a special class that represents a group of constants.",
+                "answers": []
+            },
+            {
+                "answer": "An enum is a value type.",
+                "answers": []
+            },
+            {
+                "answer": "By default associated constant values of enum members are a type of int.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is dependency injection?",
+        "answers": [
+            {
+                "answer": "Dependency injection helps to enforce loose coupling.",
+                "answers": []
+            },
+            {
+                "answer": "Dependency injection makes code modular and easier to test.",
+                "answers": []
+            },
+            {
+                "answer": "There are three types of dependency injection:",
+                "answers": [
+                    {
+                        "answer": "Constructor Injection.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Property Injection.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Method Injection.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What is the using statement?",
+        "answers": [
+            {
+                "answer": "The using statement is used for creating an object within a scope.",
+                "answers": []
+            },
+            {
+                "answer": "Once the code exits the using scope, the object is then disposed.",
+                "answers": []
+            },
+            {
+                "answer": "Only objects that implement IDisposable can be disposed to release unmanaged resources.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What are access modifiers?",
+        "answers": [
+            {
+                "answer": "An access modifier is used to specify the scope of accessibility of a member of a class or type of the class itself.",
+                "answers": []
+            },
+            {
+                "answer": "Here are some of the access modifiers:",
+                "answers": [
+                    {
+                        "answer": "Public can be accessed everywhere without restrictions.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Protected is limited to the class that inherits from a protected class.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Internal can be accessed within the current assembly.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Private cannot be accessed outside the class.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What are delegates?",
+        "answers": [
+            {
+                "answer": "Delegate is a type that represents a reference to methods with particular parameters and return types.",
+                "answers": []
+            },
+            {
+                "answer": "Can be used by using the “delegate” keyword.",
+                "answers": []
+            },
+            {
+                "answer": "Delegates inherit from System.Delegate.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What are the different types of delegates?",
+        "answers": [
+            {
+                "answer": "Single delegate - single delegate can invoke a single method.",
+                "answers": []
+            },
+            {
+                "answer": "Multicast delegate - can invoke multiple methods.",
+                "answers": []
+            },
+            {
+                "answer": "Generic delegate - No need to create an instance in a generic delegate.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is an array? Explain single and multidimensional arrays.",
+        "answers": [
+            {
+                "answer": "Single dimension array is an array of single objects.",
+                "answers": []
+            },
+            {
+                "answer": "Multidimensional array is an array that contains arrays within it.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is the difference between the System.Array.CopyTo() and System.Array.Clone()?",
+        "answers": [
+            {
+                "answer": "The CopyTo method allows copying an array from a specified index.",
+                "answers": []
+            },
+            {
+                "answer": "The Clone method is used to clone the whole array and its properties into a new array.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is the difference between an array and an array list?",
+        "answers": [
+            {
+                "answer": "The array has a fixed size and lets us create a list of items of the same type.",
+                "answers": []
+            },
+            {
+                "answer": "The array list is not of a fixed size and you can use different types of items.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is a jagged array in C#?",
+        "answers": [
+            {
+                "answer": "A jagged array can be of different types and sizes.",
+                "answers": []
+            },
+            {
+                "answer": "A jagged array can be two dimensional and can contain arrays.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is the difference between struct and class?",
+        "answers": [
+            {
+                "answer": "A class is a reference type and it inherits from “System.Object”. When there is a large amount of data then a class should be used.",
+                "answers": []
+            },
+            {
+                "answer": "A struct inherits from “System.Value” and it is a value type and NOT a reference type.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is the difference between throw and throw ex?",
+        "answers": [
+            {
+                "answer": "The throw error statement holds the original error stack of the previous function or function hierarchy.",
+                "answers": []
+            },
+            {
+                "answer": "Throw ex has a stack trace from the throw point so it’s better to use throw because it provides exact error information related to the function.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "Explain the difference between finally and finalize?",
+        "answers": [
+            {
+                "answer": "Finally is used within exception handling and it is a code block that will be executed whether there is an exception or not.",
+                "answers": []
+            },
+            {
+                "answer": "Finalize is a method that is called before garbage collection and it can be used to execute code that needs to be executed before the object is deleted.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "Explain var and dynamic?",
+        "answers": [
+            {
+                "answer": "With var, you can create a variable and C# decides what type of variable it will be.",
+                "answers": []
+            },
+            {
+                "answer": "The data type is determined at the point of declaration for var.",
+                "answers": []
+            },
+            {
+                "answer": "If you are using the dynamic keyword, you can change the variable to a different type after declaration.",
+                "answers": []
+            },
+            {
+                "answer": "The type is determined at runtime with the dynamic keyword.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What are anonymous types in C#?",
+        "answers": [
+            {
+                "answer": "Anonymous types allow us to create new types without defining them",
+                "answers": []
+            },
+            {
+                "answer": "It is available only for the current block of code.",
+                "answers": []
+            },
+            {
+                "answer": "It creates read-only properties.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is multithreading and what are its different states?",
+        "answers": [
+            {
+                "answer": "Any block of C# code runs in a process called a thread and it is the execution path of the program. Usually, the application runs on a single thread but multithreading helps to run the application on multiple threads. Multithreading can be used to divide code that can be run in parallel.",
+                "answers": []
+            },
+            {
+                "answer": "This helps to make programs faster and more efficient as tasks/blocks of code are executed at the same time.",
+                "answers": []
+            },
+            {
+                "answer": "Thread has multiple states throughout its life cycle. Such as:",
+                "answers": [
+                    {
+                        "answer": "Aborted.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "AbortRequested.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Background.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Running.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Stopped.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "StopRequested.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Suspended.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "How is the exception handling done in C#?",
+        "answers": [
+            {
+                "answer": "To handle exceptions in a c# block of code, one must wrap the code within a try and catch statement.",
+                "answers": [
+                    {
+                        "answer": "The try block of code will be used to run the code that might have an exception that will occur.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "The catch block will be used to execute code if an exception occurs.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "The finally block will be always executed after the code runs successfully or unsuccessfully.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What are the custom exceptions?",
+        "answers": [
+            {
+                "answer": "Custom exceptions are used and thrown because they provide a specific exception error that is tailored to the application.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is LINQ in C#",
+        "answers": [
+            {
+                "answer": "Language integrated query is a method of querying data in C# which syntax is similar to SQL queries.",
+                "answers": []
+            },
+            {
+                "answer": "Usually, we can query a collection of objects, lists or XML files.",
+                "answers": []
+            },
+            {
+                "answer": "LINQ can be used with collections that implement IEnumerable.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is serialization?",
+        "answers": [
+            {
+                "answer": "When we want to send an object through a network then we have to convert the object into a stream of bytes. Serialization is a process of converting an object into a stream of bytes. To facilitate the object as serializable it should implement the ISerialize interface. The process of deserialization is the reverse process of creating an object from a stream of bytes.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What are generic types in C#? <T>",
+        "answers": [
+            {
+                "answer": "Generic types help to make reusable code and they allow to specify the type of parameter that is passed into a method or class.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is reflection?",
+        "answers": [
+            {
+                "answer": "When managed code can read its own metadata to find assemblies.",
+                "answers": []
+            },
+            {
+                "answer": "Reflection provides objects of a specified type that describe assemblies, modules, and types.",
+                "answers": []
+            },
+            {
+                "answer": "Helps to identify properties and methods.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "How to use nullable types in C#?",
+        "answers": [
+            {
+                "answer": "Nullable types can be used by specifying a question mark after the type of value or object. This will make the object or value nullable.",
+                "answers": []
+            },
+            {
+                "answer": "This can be useful as it can be used to check if a value or object is not null which will prevent null reference exceptions.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is the parent class of all classes?",
+        "answers": [
+            {
+                "answer": "It is a class called “System.Object”.",
+                "answers": []
+            },
+            {
+                "answer": "Every object that we create, it will always inherit from “System.Object”.",
+                "answers": []
+            },
+            {
+                "answer": "Done automatically in the background.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "Explain code compilation in C#",
+        "answers": [
+            {
+                "answer": "The C# compiler compiles the code into managed code also called byte code.",
+                "answers": []
+            },
+            {
+                "answer": "Then JIT (Just in time compiler) compiles the code into a native or machine language which is directly executed by the CPU.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is the purpose of the “is” operator in C#?",
+        "answers": [
+            {
+                "answer": "The “is” operator is used to determine whether an object is of a certain type.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is the purpose of the “as” operator in C#?",
+        "answers": [
+            {
+                "answer": "The “as” operator can be used to cast an object to a certain type without raising an exception if the cast fails.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is the use of the null coalescing operator (??) in C#?",
+        "answers": [
+            {
+                "answer": "The null-coalescing operator ?? returns the value of its left-hand operand if it isn't null; otherwise, it evaluates the right-hand operand and returns its result.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is the use of the params keyword in C#?",
+        "answers": [
+            {
+                "answer": "By using the params keyword, you can specify a method parameter that takes a variable number of arguments. The parameter type must be a single-dimensional array.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is the base class for all arrays in C#?",
+        "answers": [
+            {
+                "answer": "The “Array” class is the base class for all the arrays in C#. It is defined in the System namespace.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "How can you sort an array in C#?",
+        "answers": [
+            {
+                "answer": "You can sort an array by using the “Array.Sort(array)” method.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What are the SOLID principles?",
+        "answers": [
+            {
+                "answer": "S - Single responsibility principle - A class should only have a single responsibility.",
+                "answers": []
+            },
+            {
+                "answer": "O - Open/Closed principle - The code should be open for extension but closed for modification.",
+                "answers": []
+            },
+            {
+                "answer": "L - Liskov substitution principle - Objects should be replaceable with instances of their sub types.",
+                "answers": []
+            },
+            {
+                "answer": "I - Interface segregation principle - Many client specific interfaces are better than a single general purpose interface.",
+                "answers": []
+            },
+            {
+                "answer": "D - Dependency inversion principle - One should depend upon abstractions not concretions.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is the DRY principle?",
+        "answers": [
+            {
+                "answer": "Don’t repeat yourself.",
+                "answers": []
+            }
+        ]
     }
 ]
