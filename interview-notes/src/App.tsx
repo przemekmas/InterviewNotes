@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
 import data from './notes.json';
 import './App.css';
 import Note from './components/Note';
 import { NoteType } from './types/NoteType';
 import Button from '@mui/material/Button';
-import Grid from '@mui/material/Grid';
-import { Grid2, Typography, Container } from '@mui/material';
+import { Grid2, Typography, Container, createTheme, ThemeProvider } from '@mui/material';
+import NavBar from './components/NavBar';
 
 function App() {
   const [noteIndex, setNoteIndex] = useState<number>(0);
@@ -38,27 +37,42 @@ function App() {
     setCurrentNote(data[noteIndex]);
   }, [noteIndex]);
 
+  const darkTheme = createTheme({
+    palette: {
+      mode: 'dark',
+      primary: {
+        main: '#90caf9',
+      },
+      secondary: {
+        main: '#f48fb1',
+      },
+      background: {
+        default: '#121212',
+        paper: '#1d1d1d',
+      },
+    },
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <Container>
-          <Grid2 container spacing={4}>
-            <Grid2 size={12}>
-              <Typography>Question: {noteIndex + 1} of {data.length}</Typography>
-            </Grid2>
-            <Grid2 size={12}>
-              <Note note={currentNote}></Note>
-            </Grid2>
-            <Grid2 size={6}>
-              <Button sx={{ width: "100%" }} onClick={setPreviousNote} variant="contained">Previous</Button>
-            </Grid2>
-            <Grid2 size={6}>
-              <Button sx={{ width: "100%" }} onClick={setNextNote} variant="contained">Next</Button>
-            </Grid2>
+    <ThemeProvider theme={darkTheme}>
+      <NavBar></NavBar>
+      <Container className='AppContent'>
+        <Grid2 container spacing={4}>
+          <Grid2 size={12}>
+            <Typography>Question: <b>{noteIndex + 1}</b> of <b>{data.length}</b></Typography>
           </Grid2>
-        </Container>
-      </header>
-    </div>
+          <Grid2 size={12}>
+            <Note note={currentNote}></Note>
+          </Grid2>
+          <Grid2 size={6}>
+            <Button sx={{ width: "100%" }} onClick={setPreviousNote} variant="contained" disabled={noteIndex == 0}>Previous</Button>
+          </Grid2>
+          <Grid2 size={6}>
+            <Button sx={{ width: "100%" }} onClick={setNextNote} variant="contained" disabled={noteIndex == data.length - 1}>Next</Button>
+          </Grid2>
+        </Grid2>
+      </Container>
+    </ThemeProvider>
   );
 }
 

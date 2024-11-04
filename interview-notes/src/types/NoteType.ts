@@ -1,7 +1,4 @@
-export interface NoteAnswersType {
-    answer: string,
-    answers: NoteAnswersType[];
-}
+import { NoteAnswersType } from "./NoteAnswersType";
 
 export interface NoteType {
     question: string;

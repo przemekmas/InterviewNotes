@@ -1,13 +1,7 @@
 import { Accordion, AccordionDetails, AccordionSummary, Box, Typography } from "@mui/material";
-import Container from "@mui/material/Container";
-import Paper from "@mui/material/Paper";
-import { padding } from "@mui/system";
-import { NoteType } from "../types/NoteType";
+import { NoteTypeProps } from "../types/NoteTypeProps";
 import NoteAnswer from "./NoteAnswer";
-
-export interface NoteTypeProps {
-    note: NoteType | undefined;
-}
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export function Note(props: NoteTypeProps) {
     return (
@@ -24,20 +18,13 @@ export function Note(props: NoteTypeProps) {
                     textAlign: "left"
                 }}>
                     <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel2-content"
                         id="panel2-header"
                     >
                         Reveal Answer(s)
                     </AccordionSummary>
                     <AccordionDetails>
-                        {/* <Typography component="ul">
-                                {
-                                    props.note.answers.map(answer => (
-                                        <Typography component="li">{answer.answer}</Typography>
-                                    ))
-                                }
-                            </Typography> */}
-
                         <NoteAnswer answers={props.note.answers}></NoteAnswer>
                     </AccordionDetails>
                 </Accordion>
