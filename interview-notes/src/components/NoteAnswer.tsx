@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { CircularProgress, Typography } from "@mui/material";
 import { NoteAnswerTypeProps } from "../types/NoteAnswerTypeProps";
 
 export function NoteAnswer(props: NoteAnswerTypeProps) {
@@ -20,7 +20,7 @@ export function NoteAnswer(props: NoteAnswerTypeProps) {
                     }
                 </>
             )
-            : <div>Loading</div>
+            : <CircularProgress />
     );
 };
 

@@ -1,9 +1,20 @@
-import { Accordion, AccordionDetails, AccordionSummary, Box, Typography } from "@mui/material";
+import { Accordion, AccordionDetails, AccordionSummary, Box, CircularProgress, Typography } from "@mui/material";
 import { NoteTypeProps } from "../types/NoteTypeProps";
 import NoteAnswer from "./NoteAnswer";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { useEffect, useState } from "react";
 
 export function Note(props: NoteTypeProps) {
+    const [expanded, setExpanded] = useState<boolean>(false);
+
+    const onExpand = () => {
+        setExpanded(!expanded);
+    };
+
+    useEffect(() => {
+        setExpanded(false);
+    }, [props.note]);
+
     return (
         props.note ?
             <Box sx={{
@@ -13,10 +24,13 @@ export function Note(props: NoteTypeProps) {
                 alignItems: 'center',
             }}>
                 <Typography sx={{ marginBottom: 5 }} variant="h5" component="h1">{props.note.question}</Typography>
-                <Accordion sx={{
-                    width: "100%",
-                    textAlign: "left"
-                }}>
+                <Accordion
+                    expanded={expanded}
+                    onChange={onExpand}
+                    sx={{
+                        width: "100%",
+                        textAlign: "left"
+                    }}>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel2-content"
@@ -29,7 +43,7 @@ export function Note(props: NoteTypeProps) {
                     </AccordionDetails>
                 </Accordion>
             </Box>
-            : <div>Loading</div>
+            : <CircularProgress />
     );
 };
 

@@ -22,7 +22,7 @@ function NavBar() {
                         variant="h6"
                         noWrap
                         component="a"
-                        href="/"
+                        href="/InterviewNotes"
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
@@ -49,7 +49,7 @@ function NavBar() {
                             textDecoration: 'none',
                         }}
                     >
-                        IN
+                        INotes
                     </Typography>
                 </Toolbar>
             </Container>
