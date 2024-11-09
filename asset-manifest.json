@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/InterviewNotes/static/css/main.48cb68c5.css",
-    "main.js": "/InterviewNotes/static/js/main.f1e4d205.js",
+    "main.js": "/InterviewNotes/static/js/main.d2cf18b7.js",
     "static/js/453.15aff109.chunk.js": "/InterviewNotes/static/js/453.15aff109.chunk.js",
     "index.html": "/InterviewNotes/index.html",
     "main.48cb68c5.css.map": "/InterviewNotes/static/css/main.48cb68c5.css.map",
-    "main.f1e4d205.js.map": "/InterviewNotes/static/js/main.f1e4d205.js.map",
+    "main.d2cf18b7.js.map": "/InterviewNotes/static/js/main.d2cf18b7.js.map",
     "453.15aff109.chunk.js.map": "/InterviewNotes/static/js/453.15aff109.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48cb68c5.css",
-    "static/js/main.f1e4d205.js"
+    "static/js/main.d2cf18b7.js"
   ]
 }
