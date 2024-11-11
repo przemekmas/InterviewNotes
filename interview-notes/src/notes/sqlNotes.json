@@ -1,0 +1,160 @@
+[
+    {
+        "question": "What is a primary key?",
+        "answers": [
+            {
+                "answer": "A primary key is a unique identifier for each record in a database table.",
+                "answers": [
+                    {
+                        "answer": "Primary keys ensure that no two rows in a table can have the same primary key value.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "They are usually enforced with a unique constraint to maintain data integrity.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What are indexes used for?",
+        "answers": [
+            {
+                "answer": "Indexes improve the speed of data retrieval operations on a database table.",
+                "answers": [
+                    {
+                        "answer": "They allow the database engine to quickly locate and access rows within a table.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Indexes can speed up queries involving joins, filtering, and ordering by reducing the number of rows to search through.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What is a clustered index?",
+        "answers": [
+            {
+                "answer": "A clustered index determines the physical order of data in a table.",
+                "answers": [
+                    {
+                        "answer": "There can only be one clustered index per table because it defines the table's storage layout.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "A clustered index is often created on the primary key column, but it can also be created on any other unique column.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Are primary keys clustered?",
+        "answers": [
+            {
+                "answer": "By default, primary keys are implemented as clustered indexes in many database systems.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "Are primary keys always clustered?",
+        "answers": [
+            {
+                "answer": "No, primary keys do not always have to be clustered.",
+                "answers": [
+                    {
+                        "answer": "In some cases, primary keys are implemented as non-clustered indexes depending on design choices or database requirements.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Describe how you would enforce that there can only be one record in a table with a specific value?",
+        "answers": [
+            {
+                "answer": "Use a unique constraint on the column to enforce that only one row can have a specific value.",
+                "answers": []
+            },
+            {
+                "answer": "Alternatively, use a filtered unique index if conditions allow partial uniqueness requirements.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "How would you get SQL code to run when table data is modified?",
+        "answers": [
+            {
+                "answer": "Use a trigger to execute SQL code in response to data modification events such as INSERT, UPDATE, or DELETE.",
+                "answers": [
+                    {
+                        "answer": "Triggers can be used to maintain data integrity, log changes, or enforce complex business rules.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What is the primary purpose of a database view?",
+        "answers": [
+            {
+                "answer": "A view provides a virtual table that represents the result of a stored query on the underlying data.",
+                "answers": [
+                    {
+                        "answer": "Views can simplify complex queries, provide an additional layer of security, and allow users to access specific data without exposing the entire table structure.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What is the difference between WHERE and HAVING clauses?",
+        "answers": [
+            {
+                "answer": "The WHERE clause is used to filter rows before any grouping is applied in a query.",
+                "answers": []
+            },
+            {
+                "answer": "The HAVING clause is used to filter groups after grouping has been applied.",
+                "answers": [
+                    {
+                        "answer": "WHERE filters individual rows, while HAVING filters aggregated data.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What is the difference between a relational database and a document store and when would you use one over the other?",
+        "answers": [
+            {
+                "answer": "A relational database organizes data in tables with rows and columns, supporting structured queries and relationships.",
+                "answers": []
+            },
+            {
+                "answer": "A document store manages data in a flexible, semi-structured format, often as JSON documents, allowing for dynamic schema and high scalability.",
+                "answers": [
+                    {
+                        "answer": "Use a relational database when data consistency and complex queries are required.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Use a document store for unstructured or semi-structured data that benefits from a flexible schema and when high availability is essential.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,269 @@
+[
+    {
+        "question": "How does versioning work in an ASP.NET Core Web API, and why is it important?",
+        "answers": [
+            {
+                "answer": "Versioning in ASP.NET Core Web APIs is important for ensuring backward compatibility when the API evolves.",
+                "answers": [
+                    {
+                        "answer": "It can be implemented using URI versioning, query string parameters, headers, or custom routing to allow multiple versions to coexist.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Versioning helps manage changes in APIs, reducing breaking changes for clients and enabling smooth transitions between versions.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "How does async/await work, and what is its purpose?",
+        "answers": [
+            {
+                "answer": "In C#, async/await is a programming model that simplifies asynchronous programming by allowing developers to write asynchronous code that looks like synchronous code. Its primary purpose is to improve application responsiveness by freeing up the main thread to handle other tasks while waiting for long-running operations (like I/O operations) to complete.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What do the letters MVC stand for, and what are the responsibilities of each?",
+        "answers": [
+            {
+                "answer": "The MVC pattern helps developers achieve a clean separation of concerns, making it easier to maintain, test, and scale applications by keeping the data (Model), interface (View), and logic (Controller) distinct and organized.",
+                "answers": []
+            },
+            {
+                "answer": "Model:",
+                "answers": [
+                    {
+                        "answer": "Manages data, business logic, and data persistence",
+                        "answers": []
+                    }
+                ]
+            },
+            {
+                "answer": "View:",
+                "answers": [
+                    {
+                        "answer": "Displays data and UI elements to the user",
+                        "answers": []
+                    }
+                ]
+            },
+            {
+                "answer": "Controller:",
+                "answers": [
+                    {
+                        "answer": "Interacts with the Model, processes input, and updates View",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What are the common return types for an MVC action?",
+        "answers": [
+            {
+                "answer": "ViewResult - Returns an HTML view, often the most common return type for MVC actions that render a webpage.",
+                "answers": []
+            },
+            {
+                "answer": "JsonResult - Returns data in JSON format, which is especially useful for AJAX calls and API responses.",
+                "answers": []
+            },
+            {
+                "answer": "RedirectResult - Redirects the request to a specified URL.",
+                "answers": []
+            },
+            {
+                "answer": "RedirectToRouteResult - Redirects to another action by route",
+                "answers": []
+            },
+            {
+                "answer": "PartialViewResult - Renders an HTML partial view",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What are the 3 scopes for DI, and describe the difference of each (Transient, Singleton, Scoped).",
+        "answers": [
+            {
+                "answer": "Transient - A new instance of the service is created each time it’s requested. This means that each injection request, even within the same scope (e.g., within a single HTTP request), will receive a fresh instance of the service.",
+                "answers": []
+            },
+            {
+                "answer": "Scoped - A new instance of the service is created once per scope. In web applications, a scope generally corresponds to a single HTTP request. This means that within a single HTTP request, all components that depend on this service will share the same instance.",
+                "answers": []
+            },
+            {
+                "answer": "Singleton - A single instance of the service is created and shared throughout the application’s lifetime. This instance is created once at the first request and remains available for all subsequent requests until the application is restarted.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is middleware in ASP.NET Core, and how does it function in the request pipeline?",
+        "answers": [
+            {
+                "answer": "Middleware in ASP.NET Core is software that processes requests and responses as they move through the HTTP request pipeline.",
+                "answers": [
+                    {
+                        "answer": "Middleware components are registered in the Program.cs or Startup.cs file, and each component can modify the request, response, or pass control to the next middleware.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Examples include authentication, logging, error handling, and CORS (Cross-Origin Resource Sharing) policies.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What is CORS and why is it important for Web APIs?",
+        "answers": [
+            {
+                "answer": "CORS (Cross-Origin Resource Sharing) is a security feature that controls how resources on a web server can be requested from another domain.",
+                "answers": [
+                    {
+                        "answer": "It's important for Web APIs to control CORS policies to restrict which domains can access the API, preventing unauthorized requests from potentially harmful sources.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "In ASP.NET Core, CORS policies can be configured in middleware to define allowed origins, headers, and methods.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What are some key improvements introduced in .NET 8 for Web API development?",
+        "answers": [
+            {
+                "answer": ".NET 8 includes features like improved HTTP/2 and HTTP/3 support, performance optimizations, and new JSON source generators to reduce serialization overhead.",
+                "answers": [
+                    {
+                        "answer": "It also includes enhanced support for minimal APIs, enabling simpler syntax and better integration with dependency injection and routing.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Additional improvements include updated diagnostics and tracing tools, aiding in performance monitoring and debugging.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "How do you handle error responses in a Web API, and what are best practices?",
+        "answers": [
+            {
+                "answer": "Error responses in a Web API are handled using exception filters, custom middleware, or the ProblemDetails response type for consistent error handling.",
+                "answers": [
+                    {
+                        "answer": "Best practices include logging errors, providing meaningful error codes, and using standardized response formats to inform clients of the issue.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "In ASP.NET Core, exception handling middleware can capture unhandled exceptions and format responses accordingly.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What are Minimal APIs in .NET, and how do they differ from traditional controllers?",
+        "answers": [
+            {
+                "answer": "Minimal APIs are a lightweight way to build APIs in .NET, introduced to simplify creating HTTP endpoints without using full controllers.",
+                "answers": [
+                    {
+                        "answer": "Minimal APIs rely on a simple, function-based syntax, reducing boilerplate code and making APIs faster to develop and deploy.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "They are ideal for smaller, focused APIs or microservices, though they offer fewer conventions compared to traditional controllers.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Explain the purpose of Entity Framework (EF) Core and how it interacts with a Web API.",
+        "answers": [
+            {
+                "answer": "Entity Framework Core (EF Core) is an ORM (Object-Relational Mapper) that simplifies data access in .NET applications by mapping C# objects to database tables.",
+                "answers": [
+                    {
+                        "answer": "In a Web API, EF Core handles data operations, translating API requests into database queries and results into C# objects, making it easier to work with data.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "EF Core supports LINQ, making it efficient for querying data, and is commonly used with dependency injection for managing database contexts.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "How does garbage collection work in .NET?",
+        "answers": [
+            {
+                "answer": "The .NET garbage collector manages memory automatically by reclaiming objects that are no longer referenced. It uses generations (0, 1, and 2) to efficiently handle short- and long-lived objects, reducing fragmentation and improving performance.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What are Global Usings in .NET 6, and why are they beneficial?",
+        "answers": [
+            {
+                "answer": "Global Usings allow commonly used namespaces to be included across the entire application, reducing boilerplate code. This feature is especially useful for large projects to minimize repetitive using statements.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "How would you optimize performance in a .NET application?",
+        "answers": [
+            {
+                "answer": "Techniques include using async operations, caching, using Structs for value types, minimizing allocations, optimizing LINQ usage, configuring correct DI scopes, and analyzing with tools like dotnet-trace and dotTrace.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is the difference between IEnumerable, IQueryable, ICollection, and IList?",
+        "answers": [
+            {
+                "answer": "IEnumerable is for simple enumeration, IQueryable supports querying with deferred execution (useful in EF), ICollection adds methods for item manipulation, and IList provides indexed access.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "How does .NET handle cross-platform compatibility?",
+        "answers": [
+            {
+                "answer": ".NET 5+ unifies .NET Core and Mono into one framework with runtime libraries that support different OS platforms, allowing .NET applications to run on Windows, macOS, and Linux.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "Explain record types in .NET.",
+        "answers": [
+            {
+                "answer": "Record types, introduced in .NET 5, are immutable reference types that provide a concise syntax for declaring data-carrying classes, particularly useful for DTOs and immutability.",
+                "answers": []
+            }
+        ]
+    }
+]

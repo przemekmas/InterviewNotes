@@ -1,0 +1,214 @@
+[
+    
+    {
+        "question": "When would you use a microservice architecture over a monolith?",
+        "answers": [
+            {
+                "answer": "Use a microservice architecture when applications require independent scalability, resilience, and technology diversity for different components.",
+                "answers": []
+            },
+            {
+                "answer": "Microservices are also ideal when different development teams need autonomy over specific services.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "When would you use a monolith over a microservice architecture?",
+        "answers": [
+            {
+                "answer": "Use a monolith when the application is relatively small, simpler, or has tightly coupled components that benefit from a single, unified deployment.",
+                "answers": []
+            },
+            {
+                "answer": "A monolith may also be preferred in early development phases or for applications with limited scalability and complexity requirements.",
+                "answers": []
+            }
+        ]
+    },
+    {
+        "question": "What is Azure Service Bus and when would you use it?",
+        "answers": [
+            {
+                "answer": "Azure Service Bus is a fully managed enterprise message broker that allows communication between different services or applications.",
+                "answers": [
+                    {
+                        "answer": "Service Bus is commonly used for decoupling applications and improving scalability and resilience.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "It supports both queue-based and publish-subscribe messaging patterns, making it suitable for reliable messaging in distributed systems.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What is an Azure Function and how does it differ from a traditional web API?",
+        "answers": [
+            {
+                "answer": "Azure Functions are serverless compute services that run code in response to various triggers such as HTTP requests, messages, or events.",
+                "answers": [
+                    {
+                        "answer": "Unlike traditional APIs that are hosted on web servers, Azure Functions automatically scale and only incur costs when the function executes.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "They are often used for lightweight processing tasks, background jobs, and event-driven workloads.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What are Azure Logic Apps, and how do they differ from Azure Functions?",
+        "answers": [
+            {
+                "answer": "Azure Logic Apps are cloud-based workflows for automating tasks and integrating systems without writing code.",
+                "answers": [
+                    {
+                        "answer": "Logic Apps are built using a designer interface and are ideal for complex orchestrations, like connecting SaaS services, automating file transfers, or handling long-running workflows.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "While Azure Functions handle code-based tasks, Logic Apps are configuration-driven and often use connectors to integrate various services.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What is Azure Blob Storage and what are its primary use cases?",
+        "answers": [
+            {
+                "answer": "Azure Blob Storage is an object storage service for unstructured data such as documents, media files, and backups.",
+                "answers": [
+                    {
+                        "answer": "Common use cases include storing images, videos, backups, and log files, especially for applications requiring scalable, secure, and highly available storage.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "It supports different access tiers (hot, cool, archive) to optimize costs based on the frequency of access.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Explain Azure Virtual Machines (VMs) and their main benefits.",
+        "answers": [
+            {
+                "answer": "Azure Virtual Machines provide on-demand, scalable computing resources with full control over OS, storage, and networking.",
+                "answers": [
+                    {
+                        "answer": "They are used for applications requiring custom configurations, lift-and-shift scenarios, or when legacy applications need to be moved to the cloud.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "VMs support a variety of OS images and allow scaling, enabling flexibility for various enterprise workloads.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What is Azure Kubernetes Service (AKS) and why would you use it?",
+        "answers": [
+            {
+                "answer": "Azure Kubernetes Service (AKS) is a managed Kubernetes container orchestration service in Azure.",
+                "answers": [
+                    {
+                        "answer": "AKS simplifies the deployment, management, and scaling of containerized applications using Kubernetes, removing the overhead of manual cluster management.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "It is ideal for microservices architectures, applications requiring horizontal scaling, and development workflows involving CI/CD.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What are Azure Availability Zones and how do they enhance resiliency?",
+        "answers": [
+            {
+                "answer": "Azure Availability Zones are physically separate locations within an Azure region that improve application resilience.",
+                "answers": [
+                    {
+                        "answer": "Each zone has independent power, cooling, and networking, which ensures high availability and fault tolerance.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Applications deployed across multiple zones can withstand failures of individual data centers, reducing downtime risks.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "How does Azure Load Balancer work and what types of load balancers does Azure provide?",
+        "answers": [
+            {
+                "answer": "Azure Load Balancer distributes incoming network traffic across multiple resources to ensure availability and performance.",
+                "answers": [
+                    {
+                        "answer": "Azure provides public and internal load balancers to manage traffic for both internet-facing applications and internal services.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Public Load Balancers handle external traffic, while internal Load Balancers distribute traffic within a virtual network.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What is Azure Active Directory (Azure AD) and why is it important?",
+        "answers": [
+            {
+                "answer": "Azure Active Directory (Azure AD) is a cloud-based identity and access management service.",
+                "answers": [
+                    {
+                        "answer": "Azure AD provides secure single sign-on (SSO), identity protection, and conditional access policies for applications in the cloud and on-premises.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "It is essential for managing user identities, permissions, and enabling secure access to resources.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Explain the difference between Azure SQL Database and SQL Server on Azure VMs.",
+        "answers": [
+            {
+                "answer": "Azure SQL Database is a fully managed relational database-as-a-service optimized for scalability, maintenance, and high availability.",
+                "answers": [
+                    {
+                        "answer": "Azure SQL Database abstracts underlying infrastructure, allowing automatic patching, backups, and scaling.",
+                        "answers": []
+                    }
+                ]
+            },
+            {
+                "answer": "SQL Server on Azure VMs offers full control over SQL Server instances, ideal for applications requiring custom configurations or using SQL Server features unavailable in Azure SQL Database.",
+                "answers": [
+                    {
+                        "answer": "It is often chosen for lift-and-shift scenarios where minimal application changes are desired.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    }
+]
