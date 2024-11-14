@@ -156,5 +156,44 @@
                 ]
             }
         ]
+    },
+    {
+        "question": "What is the difference between a clustered index and a non-clustered index?",
+        "answers": [
+            {
+                "answer": "Clustered Index:",
+                "answers": [
+                    {
+                        "answer": "Physically sorts and stores data rows in the index order.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "You can only have a single index per table.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Faster for retrieving rows in the index order.",
+                        "answers": []
+                    }
+                ]
+            },
+            {
+                "answer": "Non-Clustered Index:",
+                "answers": [
+                    {
+                        "answer": "Stores a separate structure with pointers to the data.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "You can have multiple non-clustered indexes per table.",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Slower than clustered index for retrievals but can speed up specific queries with lookups.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
     }
 ]

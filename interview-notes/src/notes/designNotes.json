@@ -1,0 +1,57 @@
+[
+    {
+        "question": "What is Domain-Driven Design (DDD)?",
+        "answers": [
+            {
+                "answer": "Ubiquitous Language: Teams develop a shared language, using consistent terminology between developers and stakeholders to avoid misunderstandings.",
+                "answers": []
+            },
+            {
+                "answer": "Domain Model: The core of DDD is a domain model—a conceptual representation of the business. This model structures the code in a way that mirrors real-world business processes, rules, and relationships.",
+                "answers": []
+            },
+            {
+                "answer": "Bounded Contexts: Since businesses are complex, DDD breaks down large systems into bounded contexts, which are clear boundaries around parts of the model where specific terms and rules apply consistently.",
+                "answers": []
+            },
+            {
+                "answer": "Entities, Value Objects, Aggregates: DDD introduces design patterns to structure code in alignment with the business model:",
+                "answers": [
+                    {
+                        "answer": "Entities: Objects with a unique identity (like a customer).",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Value Objects: Objects defined by attributes rather than identity (like a date or money amount).",
+                        "answers": []
+                    },
+                    {
+                        "answer": "Aggregates: Groups of entities and value objects that are treated as a single unit.",
+                        "answers": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What is Test-Driven Development (TDD)?",
+        "answers": [
+            {
+                "answer": "Write a Test: Start by writing a test for a small piece of functionality, based on the requirement. This test will initially fail because the functionality doesn’t exist yet.",
+                "answers": []
+            },
+            {
+                "answer": "Write the Code: Write just enough code to make the test pass. Focus on simplicity and avoid adding extra features.",
+                "answers": []
+            },
+            {
+                "answer": "Refactor: After the test passes, improve the code (refactor) to make it cleaner or more efficient without changing its functionality. The test ensures the code still works as expected.",
+                "answers": []
+            },
+            {
+                "answer": "Repeat: Continue this cycle for each small feature or change, building a suite of tests that validate the entire system.",
+                "answers": []
+            }
+        ]
+    }
+]

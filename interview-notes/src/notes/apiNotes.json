@@ -265,5 +265,18 @@
                 "answers": []
             }
         ]
+    },
+    {
+        "question": "Explain REST",
+        "answers": [
+            {
+                "answer": "REST stands for Representational State Transfer.",
+                "answers": []
+            },
+            {
+                "answer": "It’s an architectural style for designing networked applications, where resources are represented via URLs and interacted with using standard HTTP methods like GET, POST, PUT, and DELETE. RESTful services are stateless, meaning each request from a client contains all the information the server needs to fulfill that request, making them scalable and suitable for web services and APIs.",
+                "answers": []
+            }
+        ]
     }
 ]

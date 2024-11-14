@@ -3,6 +3,7 @@ import apiNoteData from './notes/apiNotes.json';
 import azureCloudNoteData from './notes/azureCloudNotes.json';
 import csharpNoteData from './notes/csharpNotes.json';
 import sqlNoteData from './notes/sqlNotes.json';
+import designData from './notes/designNotes.json';
 import './App.css';
 import Note from './components/Note';
 import { NoteType } from './types/NoteType';
@@ -60,6 +61,9 @@ function App() {
       case "sql":
         setData(sqlNoteData);
         break;
+      case "design":
+        setData(designData);
+        break;
     }
   };
 
@@ -103,6 +107,7 @@ function App() {
                   <FormControlLabel value="api" control={<Radio />} label=".NET API" />
                   <FormControlLabel value="azureCloud" control={<Radio />} label="Azure Cloud" />
                   <FormControlLabel value="sql" control={<Radio />} label="SQL" />
+                  <FormControlLabel value="design" control={<Radio />} label="Softare Designs" />
                 </RadioGroup>
               </FormControl>
             </Grid2>
