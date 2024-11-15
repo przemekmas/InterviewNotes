@@ -102,6 +102,9 @@ function App() {
                   name="row-radio-buttons-group"
                   value={topicValue}
                   onChange={handleTopicChange}
+                  sx={{
+                    justifyContent: "center"
+                  }}
                 >
                   <FormControlLabel value="csharp" control={<Radio />} label="C#" />
                   <FormControlLabel value="api" control={<Radio />} label=".NET API" />
